@@ -1,8 +1,7 @@
-FROM        yyldocker/node-base
+FROM        yyldocker/node-base:v1
 
 # COMMIT APP FILES
-ADD         . /src/mockserver/
-RUN         cd /src/mockserver/ && npm install
-CMD			cd /src/mockserver/ && npm start
+ADD         . /root/mockserver/
+RUN         cd /root/mockserver/ && npm install
+CMD			cd /root/mockserver/ && npm start
 
-	
